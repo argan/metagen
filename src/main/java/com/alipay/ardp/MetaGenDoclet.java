@@ -14,6 +14,7 @@ import java.util.Map;
 import java.util.Set;
 
 import com.sun.javadoc.ClassDoc;
+import com.sun.javadoc.LanguageVersion;
 import com.sun.javadoc.RootDoc;
 
 /**
@@ -93,4 +94,8 @@ public class MetaGenDoclet {
         return 0;
     }
 
+    public static LanguageVersion languageVersion() {
+        return LanguageVersion.JAVA_1_5;
+    }
+    
 }
